@@ -7,13 +7,13 @@
     <listType typeId="3f780393-8868-416c-bbfc-9eba2ec11178" valueTypeId="cd43e3fe-7fcd-4857-9ccd-c49a66f801a5"/>
     <managerType typeId="a3b3af8e-363a-43ad-a3d1-0ad15da395cb" valueTypeId="55b8d58a-bb89-4ace-bcd7-bbe105dce15e"/>
   </producedTypes>
-  <name>Sales</name>
+  <name>Продажи</name>
   <synonym>
     <key>ru</key>
-    <value>Sales</value>
+    <value>Продажи</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <inputByString>Document.Sales.StandardAttribute.Number</inputByString>
+  <inputByString>Document.Продажи.StandardAttribute.Number</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
@@ -23,24 +23,24 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
-  <defaultObjectForm>Document.Sales.Form.DocumentForm</defaultObjectForm>
-  <defaultListForm>Document.Sales.Form.ListForm</defaultListForm>
+  <defaultObjectForm>Document.Продажи.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.Продажи.Form.ФормаСписка</defaultListForm>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
-  <forms uuid="294c57c3-dd90-47c8-8577-5330d34c2d29">
-    <name>DocumentForm</name>
+  <forms uuid="324f7def-b7b2-4e5c-871d-c8e7de988d81">
+    <name>ФормаДокумента</name>
     <synonym>
       <key>ru</key>
-      <value>Document form</value>
+      <value>Форма документа</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="8cc2ec26-be4a-494b-ba46-77589dc82887">
-    <name>ListForm</name>
+  <forms uuid="8dd79b6f-573a-4500-a49f-3ac53f3695e5">
+    <name>ФормаСписка</name>
     <synonym>
       <key>ru</key>
-      <value>List form</value>
+      <value>Форма списка</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
@@ -50,19 +50,19 @@
       <objectType typeId="40027f90-2391-4e33-96b2-e3b33c8624f5" valueTypeId="b28f4fc0-96c1-439a-bc07-8c15c9aa4d3c"/>
       <rowType typeId="e35d7387-99da-49d3-a880-ced973d80783" valueTypeId="0211f05c-d0d6-43e1-97b9-f48d50e51de4"/>
     </producedTypes>
-    <name>TabularSection</name>
+    <name>Товары</name>
     <synonym>
       <key>ru</key>
-      <value>Tabular section</value>
+      <value>Товары</value>
     </synonym>
     <attributes uuid="70eabad4-b1fa-440a-977d-7b8cca91d7e0">
-      <name>Product</name>
+      <name>Товар</name>
       <synonym>
         <key>ru</key>
-        <value>Product</value>
+        <value>Товар</value>
       </synonym>
       <type>
-        <types>CatalogRef.Products</types>
+        <types>CatalogRef.Товары</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -70,10 +70,10 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="314a8719-d222-4ef0-a909-a028f8fe9531">
-      <name>Amount</name>
+      <name>Количество</name>
       <synonym>
         <key>ru</key>
-        <value>Amount</value>
+        <value>Количество</value>
       </synonym>
       <type>
         <types>Number</types>
@@ -87,10 +87,10 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="5eb6b546-d265-404c-8f20-3f2a61fcf26e">
-      <name>Price</name>
+      <name>Цена</name>
       <synonym>
         <key>ru</key>
-        <value>Price</value>
+        <value>Цена</value>
       </synonym>
       <type>
         <types>Number</types>
@@ -104,10 +104,10 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="34558f71-7519-4f01-ad67-730483c5a6c6">
-      <name>Sum</name>
+      <name>Сумма</name>
       <synonym>
         <key>ru</key>
-        <value>Sum</value>
+        <value>Сумма</value>
       </synonym>
       <type>
         <types>Number</types>
