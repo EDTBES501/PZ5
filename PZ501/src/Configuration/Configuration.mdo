@@ -31,6 +31,6 @@
     <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem.Sale</subsystems>
-  <catalogs>Catalog.Products</catalogs>
-  <documents>Document.Sales</documents>
+  <catalogs>Catalog.Товары</catalogs>
+  <documents>Document.Продажи</documents>
 </mdclass:Configuration>

@@ -365,7 +365,7 @@
     </edit>
     <main>true</main>
     <extInfo xsi:type="form:DynamicListExtInfo">
-      <mainTable>Document.Sales</mainTable>
+      <mainTable>Document.Продажи</mainTable>
       <dynamicDataRead>true</dynamicDataRead>
       <autoFillAvailableFields>true</autoFillAvailableFields>
       <autoSaveUserSettings>true</autoSaveUserSettings>

@@ -101,7 +101,7 @@
     </extInfo>
   </items>
   <items xsi:type="form:Table">
-    <name>TabularSection</name>
+    <name>Товары</name>
     <id>7</id>
     <visible>true</visible>
     <enabled>true</enabled>
@@ -109,11 +109,11 @@
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Объект.TabularSection</segments>
+      <segments>Объект.Товары</segments>
     </dataPath>
     <titleLocation>None</titleLocation>
     <items xsi:type="form:FormField">
-      <name>TabularSectionНомерСтроки</name>
+      <name>ТоварыНомерСтроки</name>
       <id>20</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -121,10 +121,10 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.TabularSection.LineNumber</segments>
+        <segments>Объект.Товары.LineNumber</segments>
       </dataPath>
       <extendedTooltip>
-        <name>TabularSectionНомерСтрокиРасширеннаяПодсказка</name>
+        <name>ТоварыНомерСтрокиРасширеннаяПодсказка</name>
         <id>22</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -139,7 +139,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>TabularSectionНомерСтрокиКонтекстноеМеню</name>
+        <name>ТоварыНомерСтрокиКонтекстноеМеню</name>
         <id>21</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -159,7 +159,7 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>TabularSectionProduct</name>
+      <name>ТоварыТовар</name>
       <id>23</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -167,10 +167,10 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.TabularSection.Product</segments>
+        <segments>Объект.Товары.Товар</segments>
       </dataPath>
       <extendedTooltip>
-        <name>TabularSectionProductРасширеннаяПодсказка</name>
+        <name>ТоварыТоварРасширеннаяПодсказка</name>
         <id>25</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -185,7 +185,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>TabularSectionProductКонтекстноеМеню</name>
+        <name>ТоварыТоварКонтекстноеМеню</name>
         <id>24</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -209,7 +209,7 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>TabularSectionAmount</name>
+      <name>ТоварыКоличество</name>
       <id>26</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -217,10 +217,14 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.TabularSection.Amount</segments>
+        <segments>Объект.Товары.Количество</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>ТоварыКоличествоПриИзменении</name>
+      </handlers>
       <extendedTooltip>
-        <name>TabularSectionAmountРасширеннаяПодсказка</name>
+        <name>ТоварыКоличествоРасширеннаяПодсказка</name>
         <id>28</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -235,7 +239,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>TabularSectionAmountКонтекстноеМеню</name>
+        <name>ТоварыКоличествоКонтекстноеМеню</name>
         <id>27</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -259,7 +263,7 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>TabularSectionPrice</name>
+      <name>ТоварыЦена</name>
       <id>29</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -267,10 +271,14 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.TabularSection.Price</segments>
+        <segments>Объект.Товары.Цена</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>ТоварыЦенаПриИзменении</name>
+      </handlers>
       <extendedTooltip>
-        <name>TabularSectionPriceРасширеннаяПодсказка</name>
+        <name>ТоварыЦенаРасширеннаяПодсказка</name>
         <id>31</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -285,7 +293,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>TabularSectionPriceКонтекстноеМеню</name>
+        <name>ТоварыЦенаКонтекстноеМеню</name>
         <id>30</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -309,7 +317,7 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>TabularSectionSum</name>
+      <name>ТоварыСумма</name>
       <id>32</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -317,10 +325,10 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.TabularSection.Sum</segments>
+        <segments>Объект.Товары.Сумма</segments>
       </dataPath>
       <extendedTooltip>
-        <name>TabularSectionSumРасширеннаяПодсказка</name>
+        <name>ТоварыСуммаРасширеннаяПодсказка</name>
         <id>34</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -335,7 +343,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>TabularSectionSumКонтекстноеМеню</name>
+        <name>ТоварыСуммаКонтекстноеМеню</name>
         <id>33</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -359,7 +367,7 @@
       </extInfo>
     </items>
     <autoCommandBar>
-      <name>TabularSectionКоманднаяПанель</name>
+      <name>ТоварыКоманднаяПанель</name>
       <id>9</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -375,10 +383,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>TabularSectionСтрокаПоиска</name>
+      <name>ТоварыСтрокаПоиска</name>
       <id>11</id>
       <extendedTooltip>
-        <name>TabularSectionСтрокаПоискаРасширеннаяПодсказка</name>
+        <name>ТоварыСтрокаПоискаРасширеннаяПодсказка</name>
         <id>13</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -393,7 +401,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>TabularSectionСтрокаПоискаКонтекстноеМеню</name>
+        <name>ТоварыСтрокаПоискаКонтекстноеМеню</name>
         <id>12</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -402,7 +410,7 @@
         </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
-      <source>TabularSectionСтрокаПоиска</source>
+      <source>ТоварыСтрокаПоиска</source>
       <extInfo xsi:type="form:SearchStringAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
@@ -413,10 +421,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>TabularSectionСостояниеПросмотра</name>
+      <name>ТоварыСостояниеПросмотра</name>
       <id>14</id>
       <extendedTooltip>
-        <name>TabularSectionСостояниеПросмотраРасширеннаяПодсказка</name>
+        <name>ТоварыСостояниеПросмотраРасширеннаяПодсказка</name>
         <id>16</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -431,7 +439,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>TabularSectionСостояниеПросмотраКонтекстноеМеню</name>
+        <name>ТоварыСостояниеПросмотраКонтекстноеМеню</name>
         <id>15</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -441,7 +449,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>ViewStatusAddition</type>
-      <source>TabularSectionСостояниеПросмотра</source>
+      <source>ТоварыСостояниеПросмотра</source>
       <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
@@ -452,10 +460,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>TabularSectionУправлениеПоиском</name>
+      <name>ТоварыУправлениеПоиском</name>
       <id>17</id>
       <extendedTooltip>
-        <name>TabularSectionУправлениеПоискомРасширеннаяПодсказка</name>
+        <name>ТоварыУправлениеПоискомРасширеннаяПодсказка</name>
         <id>19</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -470,7 +478,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>TabularSectionУправлениеПоискомКонтекстноеМеню</name>
+        <name>ТоварыУправлениеПоискомКонтекстноеМеню</name>
         <id>18</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -480,13 +488,13 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>SearchControlAddition</type>
-      <source>TabularSectionУправлениеПоиском</source>
+      <source>ТоварыУправлениеПоиском</source>
       <extInfo xsi:type="form:SearchControlAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
     </searchControlAddition>
     <extendedTooltip>
-      <name>TabularSectionРасширеннаяПодсказка</name>
+      <name>ТоварыРасширеннаяПодсказка</name>
       <id>10</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -501,7 +509,7 @@
       </extInfo>
     </extendedTooltip>
     <contextMenu>
-      <name>TabularSectionКонтекстноеМеню</name>
+      <name>ТоварыКонтекстноеМеню</name>
       <id>8</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -555,7 +563,7 @@
     <name>Объект</name>
     <id>1</id>
     <valueType>
-      <types>DocumentObject.Sales</types>
+      <types>DocumentObject.Продажи</types>
     </valueType>
     <view>
       <common>true</common>
