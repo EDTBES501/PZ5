@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="acd1bec9-62f2-4e81-b2f1-553529c3719e">
+  <name>Sale</name>
+  <synonym>
+    <key>ru</key>
+    <value>Sale</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Products</content>
+  <content>Document.Sales</content>
+</mdclass:Subsystem>
